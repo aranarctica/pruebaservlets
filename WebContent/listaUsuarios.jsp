@@ -5,6 +5,7 @@
 <%@page import="modelo.*"%>
 <%
 	ArrayList<Usuario> usuarios = (ArrayList<Usuario>) request.getAttribute("usuarios");
+	UsuarioModelo usuarioModelo = new UsuarioModelo();
 %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -20,29 +21,29 @@
 
 
 	<%
-	 	for (Usuario usuario : usuarios) {
+		for (Usuario usuario : usuarioModelo.selectAll()) {
 			out.println(usuario.getNombre() + "<br>");
 		}
-	%> 
-	
+	%>
 
 
 
 
-		<h1>Lista de Usuarios Jstl</h1>
-		<hr>
-		<br>
 
-<C:forEach items="${usuarios}" var="usuario" >
+	<h1>Lista de Usuarios Jstl</h1>
+	<hr>
+	<br>
+
+	<C:forEach items="${usuarios}" var="usuario">
 	${usuario.nombre}<br>
-</C:forEach>
+	</C:forEach>
+
+
+<a href="Logout">Salir</a>
 
 
 
 
-		
 
-
-			
 </body>
 </html>

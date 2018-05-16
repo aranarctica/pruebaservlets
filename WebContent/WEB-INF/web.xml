@@ -12,7 +12,25 @@
 
 <!-- Publicamos nuestro servlet aqui -->
 
-   
+       <servlet>
+        <servlet-name>Logear</servlet-name>
+        <servlet-class>controlador.Logear</servlet-class>
+    </servlet>
+    
+     <servlet-mapping>
+        <servlet-name>Logear</servlet-name>
+        <url-pattern>/Logear</url-pattern>
+    </servlet-mapping>
+    
+       <servlet>
+        <servlet-name>Logout</servlet-name>
+        <servlet-class>controlador.Logout</servlet-class>
+    </servlet>
+    
+     <servlet-mapping>
+        <servlet-name>Logout</servlet-name>
+        <url-pattern>/Logout</url-pattern>
+    </servlet-mapping>
 
     <servlet>
         <servlet-name>ListarUsuarios</servlet-name>
