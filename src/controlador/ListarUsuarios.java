@@ -29,9 +29,9 @@ public class ListarUsuarios extends HttpServlet {
 			usuario = new Usuario();
 			usuario.setNombre("Aitor");
 			usuarios.add(usuario);
-			// usuario = new Usuario();
-		// 	usuario.setNombre(nombreUsuario);
-			// usuarios.add(usuario);
+			usuario = new Usuario();
+			//usuario.setNombre(nombreUsuario);
+			 usuarios.add(usuario);
 			
 			
 			
