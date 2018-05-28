@@ -5,7 +5,7 @@
 <%@page import="modelo.*"%>
 <%
 	ArrayList<Usuario> usuarios = (ArrayList<Usuario>) request.getAttribute("usuarios");
-	UsuarioModelo usuarioModelo = new UsuarioModelo();
+
 %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -15,13 +15,15 @@
 <title>Insert title here</title>
 </head>
 <body>
+<div>
+  <h5 class="my-0 mr-md-auto font-weight-normal">Bienvenido ${sessionScope.usuarioLogueado.nombre}</h5></div>
 	<h1>Lista de Usuarios java</h1>
 	<hr>
 	<br>
 
 
 	<%
-		for (Usuario usuario : usuarioModelo.selectAll()) {
+		for (Usuario usuario : usuarios) {
 			out.println(usuario.getNombre() + "<br>");
 		}
 	%>

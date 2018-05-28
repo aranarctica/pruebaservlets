@@ -26,7 +26,7 @@ public class Logear extends HttpServlet {
 			session.setAttribute("usuarioLogeado", usuarioLogeado);
 			
 			// enviar a listar
-			response.sendRedirect("listaUsuarios.jsp");
+			response.sendRedirect("ListarUsuarios");
 			
 		} else {
 			// agur
