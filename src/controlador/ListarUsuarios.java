@@ -26,7 +26,7 @@ public class ListarUsuarios extends HttpServlet {
 
 			UsuarioModelo usuarioModelo = new UsuarioModelo();
 			
-			usuarios= usuarioModelo.selectAll();
+			usuarios = usuarioModelo.selectAll();
 			
 			
 			// enviar datos

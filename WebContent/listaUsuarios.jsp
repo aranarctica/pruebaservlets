@@ -28,8 +28,7 @@
 		}
 	%>
 
-
-
+<button>Anadir<a href="anadirUsuarios.html"></a></button>
 
 
 	<h1>Lista de Usuarios Jstl</h1>
